@@ -1,10 +1,20 @@
-﻿namespace Algorithms_С_
+﻿using AlgorithmsLibrary;
+
+class ChooseAlgorithm
 {
-    internal class Program
+    static void Main()
     {
-        static void Main(string[] args)
+        Console.WriteLine("This is a examples of Algorithms on C#");
+        Console.WriteLine("Choose a algorithm:");
+        Console.WriteLine();
+        Console.WriteLine("1. Bynary search");
+        string option = Console.ReadLine();
+        switch (option)
         {
-            Console.WriteLine("Hello, World!");
+            case "1":
+
+                 AlgorithmsLibrary.Check.Checkout();
+                break;
         }
     }
 }
