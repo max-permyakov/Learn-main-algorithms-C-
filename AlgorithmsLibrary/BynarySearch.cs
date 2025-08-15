@@ -1,6 +1,6 @@
 ﻿namespace AlgorithmsLibrary
 {
-    class Bynary
+    public class Bynary
     {
 
 
@@ -26,25 +26,25 @@
         }
     }
 
- public   class Check()
-    {
+// public   class Check()
+//    {
 
-        public static void Checkout()
-        {
-            int[] arr = new int[10];
-            int target = 246;
-            for (int i = 0; i < 10; i++)
-            {
-                arr[i] = i * 123;
+//        public static void Checkout()
+//        {
+//            int[] arr = new int[10];
+//            int target = 246;
+//            for (int i = 0; i < 10; i++)
+//            {
+//                arr[i] = i * 123;
 
-            }
-            Console.WriteLine("collection: ");
-            Console.WriteLine(string.Join(", ", arr));
-            Console.WriteLine("target "+target+'\n');
-            int a = Bynary.BinarySearch(arr, target);
-            Console.WriteLine("id target " + a +'\n');
-            Console.WriteLine("for code go to /AlgorithmsLibary/BynarySearch.cs\n");
+//            }
+//            Console.WriteLine("collection: ");
+//            Console.WriteLine(string.Join(", ", arr));
+//            Console.WriteLine("target "+target+'\n');
+//            int a = Bynary.BinarySearch(arr, target);
+//            Console.WriteLine("id target " + a +'\n');
+//            Console.WriteLine("for code go to /AlgorithmsLibary/BynarySearch.cs\n");
             
-        }
-    }
+//        }
+//    }
 }
