@@ -37,20 +37,5 @@
         }
     }
 
-    // Пример использования
-    public class Program
-    {
-        public static void Main()
-        {
-            int[] array = { 64, 25, 12, 22, 11, 99, 3, 100 };
-
-            Console.WriteLine("Неотсортированный массив:");
-            Console.WriteLine(string.Join(", ", array));
-
-            SelectionSort.Sort(array);
-
-            Console.WriteLine("\nОтсортированный массив:");
-            Console.WriteLine(string.Join(", ", array));
-        }
-    }
+ 
 }

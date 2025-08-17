@@ -12,6 +12,8 @@ class ChooseAlgorithm
         Console.WriteLine();
         Console.WriteLine("1. Bynary search");
         Console.WriteLine("2. Selection Sort");
+        Console.WriteLine("3. Quick Sort");
+
 
         string option = Console.ReadLine();
         for (int i = 0; i < 10; i++)
@@ -26,10 +28,17 @@ class ChooseAlgorithm
                 Console.WriteLine(string.Join(", ", a) + a[9]);
                 Console.WriteLine("index " + rez);
                 break;
+
             case "2":
                 Console.WriteLine("Before " + string.Join(", ", a));
-                SelectionSort.Sort(a);
+               SelectionSort.Sort(a);
                 Console.WriteLine("After " + string.Join(", ", a));
+                break;
+            case "3":
+                Console.WriteLine("Before " + string.Join(", ", a));
+                int[] rez1 = quickSort.Sort(a);
+                Console.WriteLine("After " + string.Join(", ", rez1));
+
 
                 break;
         }
