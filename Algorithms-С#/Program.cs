@@ -36,7 +36,7 @@ class ChooseAlgorithm
                 break;
             case "3":
                 Console.WriteLine("Before " + string.Join(", ", a));
-                int[] rez1 = quickSort.Sort(a);
+                int[] rez1 = QuickSort.Sort(a);
                 Console.WriteLine("After " + string.Join(", ", rez1));
 
 

@@ -1,41 +1,42 @@
-﻿using System.Collections.Generic;
-using System.ComponentModel.Design;
-namespace AlgorithmsLibrary
+﻿namespace AlgorithmsLibrary
 {
-    public class quickSort
+    public class QuickSort
     {
-        public static int[] Sort(int[] a)
+        public static int[] Sort(int[] arr)
         {
-            if (a.Length < 2) { return a; }
-            else { 
-            int pivot = a[0];
-
-            List<int> less = new List<int>();
-            List<int> greater = new List<int>();
-                for(int i=1; i<a.Length; i++)
+            if (arr.Length < 2)
+            {
+                return arr;
+            }
+            else
+            {
+                Random r = new Random();
+                List<int> less = new List<int>();
+                List<int> greater = new List<int>();
+                int pivot = arr[r.Next(arr.Length)];
+                for (int i = 1; i < arr.Length; i++)
                 {
-                    if (a[i]<pivot)
-                    {
-                        less.Add(a[i]);
 
-                    }else greater.Add(a[i]);
-                            
-               }
+                    if (arr[i] < pivot)
+                    {
+
+                        less.Add(arr[i]);
+                    }
+                    else
+                    {
+                        greater.Add(arr[i]);
+                    }
+
+
+                }
                 int[] sortedLess = Sort(less.ToArray());
                 int[] sortedGreater = Sort(greater.ToArray());
-
-                int[] result = new int[sortedLess.Length+1+sortedGreater.Length];
+                int[] result = new int[sortedLess.Length + 1 + sortedGreater.Length];
                 Array.Copy(sortedLess, 0, result, 0, sortedLess.Length);
                 result[sortedLess.Length] = pivot;
                 Array.Copy(sortedGreater, 0, result, sortedLess.Length + 1, sortedGreater.Length);
-
                 return result;
-
             }
-
-
-
-
-        }      
+        }
     }
 }
